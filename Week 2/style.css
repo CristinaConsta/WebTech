@@ -30,7 +30,7 @@ height:850px;
     margin-left: 200px;
     margin-top: 20px;
     font-family: Helvetica;
-    font-size: 18px;
+    font-size: 32px;
     font-size: bold;
 
 }
@@ -43,11 +43,43 @@ height:850px;
 }
 #Signup{
     margin-left: 200px;
-    margin-top: 20px;
-    width:200px;
+    width:350px;
     height:30px;
     background-color: #1DA1F2;
     color: white;
+    font-weight: bold;
     border-radius: 5px;
     border: 0px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#Join{
+    margin-left: 200px;
+    width:350px;
+    height:30px;
+    background-color: white;
+    color: #1DA1F2;
+    border-radius: 5px;
+    font-weight: bold;
+    border: 1px solid #1DA1F2;
+    border-radius: 10px;
+    cursor:pointer; /* or using a dummy href */
+    
+}
+
+#Join:hover{
+    background-color: rgb(209, 243, 253);
+       
+}
+
+#Signup:hover{
+    background-color: rgb(71, 152, 177);
+    }
+
+a{
+    margin-left: 10px;
+    text-decoration: none;
+    color: #655786;
+    font-size: small;
+    font-family: 'Segoe UI';
 }
