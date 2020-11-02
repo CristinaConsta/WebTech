@@ -1,0 +1,54 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+
+#left{
+    background-color:red;
+    width:20%;
+    height:100px;
+    float:left;
+    
+}
+
+#middle{
+    background-color:yellow;
+    width:60%;
+    height:100px;
+    float:left;
+}
+
+#right{
+    background-color:blue;
+    width:20%;
+    height:100px;
+    float:left;
+
+}
+
+#text1{
+    color: green;
+    font-size: 50px;
+    font-family: Arial black;
+    margin-left:200px;
+}
+
+@media screen and (max-width: 800px){ /* the point when the style should change*/
+    #left, #middle, #right{
+        width:100%;
+    }
+    #text1{
+        font-size: 15px;
+        margin-left:10px;
+    }
+
+}
+
+@media screen and (max-width:500px){
+    #left, #middle, #right{
+        width:100%;
+    }
+#text1{
+    color: yellow; /* or display:none; */
+    }
+}
