@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>World Books</title>
+</head>
+
+<body>
+    <div id="header">
+        <h4>Welcome to WorldBooks</h4>
+        <img src="Logo.png">
+        <hr>
+    </div>
+
+    <div id="info">
+        
+        <fieldset>
+            <legend>Main Form</legend>
+            <h4>Customer Information:</h4>
+        <form>
+            <div id="customerinf">
+            <label for="t1">Customer Name:</label> <input id="t1" type="text"><br><br>
+            <label for="t2">Street address:</label> <input id="t2" type="text"><br><br>
+            <label for="t3">Email address:</label> <input id="t3" type="text"><br><br>
+            <label for="t4">Post code:</label> <input id="t4" type="text"><br><br>
+            <label for="t5">Phone number:</label> <input id="t5" type="text"><br><br>
+            </div>
+            <h4>Shopping Cart:</h4><br>
+
+            <table>
+                <tr>
+                    <th>Book Title</th><th>Author</th><th>Price</th><th>Quantity</th>
+                </tr>
+                <tr>
+                    <td>The Genius of Photography</td><td>Gerry Badger</td><td>£25.00</td><td>1</td>
+                </tr>
+                <tr>
+                    <td>A History of Modern Britain</td><td>Andrew Marr</td><td>£14.99</td><td>4</td>
+                </tr>
+                <tr>
+                    <td>Wye Valley(Collins New Naturalist Library)</td><td>George F. Peterken</td><td>£21.99</td><td>2</td>
+                </tr>
+            </table>
+
+            <h4 id="pay">Payment method:</h4>
+            <input type="radio" name="radio"> <label>Visa</label>
+            <input type="radio" name="radio"> <label>Master Card</label>
+            <input type="radio" name="radio"> <label>Switch/Debit</label>
+            <input type="radio" name="radio"> <label>Cheque</label>
+            <h4>I would like to be contacted by:</h4>
+            <input id="c1" type="checkbox"><label for="c1">email</label>
+            <input id="c2" type="checkbox"><label for="c2">mobile</label>
+            <input id="c3" type="checkbox"><label for="c3">post</label>
+            <input id="c4" type="checkbox"><label for="c4">visit</label>
+            <h4>Other comments:</h4>
+            <textarea placeholder="other comments"></textarea><br><br>
+            <button id="submit">Submit form</button>
+            <button id="reset">Reset form</button>
+        </form>
+        </fieldset> 
+    </div>
+
+
+
+</body>
+
+</html>
