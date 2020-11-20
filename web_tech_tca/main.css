@@ -78,6 +78,8 @@ form label{
 }
 
 form input{
+    height:18px;
+    margin:5px;
     width:60%;
 }
 
