@@ -1,0 +1,103 @@
+h1,h2{
+        text-align: center;
+}
+
+*{
+    font-family: Arial;
+}
+
+#wrapper{
+    padding: 0 auto;
+    width: 80%;
+    height:900px;
+    margin: 0 auto;
+    background-color: rgb(227, 241, 200);
+}
+
+body{
+    background-color: rgb(241, 241, 229);
+    height:100%;
+}
+
+#main_section{
+    overflow: hidden;
+}
+
+#Section1, #Section3{
+    background-color: rgb(179, 192, 133);
+    padding:auto;
+    margin:10px;
+    width:48%;
+    float:left;
+    height:200px;
+}
+
+#Section2, #Section4{
+    background-color: rgb(179, 192, 133);
+    padding:auto;
+    margin:10px;
+    width:48%;
+    float:right;
+    height:200px;        
+}
+
+#Contact_us{
+    background-color: rgb(179, 192, 133);
+    padding:auto;
+    margin-top:5px;
+    margin-bottom: 5px;
+    margin-left: 27%;
+    width:45%;
+    float:left;
+    height:270px;
+}
+
+li{
+    display:inline-block;
+}
+
+nav{
+    margin: 0 auto;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+#footer p{
+    text-align: center;
+    float:center;
+}
+
+form label{
+    display:inline-block;
+    margin:5px;
+    width:25%;
+    text-align: left;
+}
+
+form input{
+    width:60%;
+}
+
+#message{
+    height:50px;
+}
+
+button{
+    padding:0 auto;
+    float:center;
+    margin-top:10px;
+    margin-left:40%;
+    height:30px;
+}
+
+@media screen and (max-width:400px){
+    #Section1, #Section2, #Section3, #Section4, #Contact_us{
+        float:left;
+        font-size: 12px;
+        width:95%;
+        margin: 5px;
+    }
+}
