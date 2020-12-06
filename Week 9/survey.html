@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Survey Form</title>
+        <script src="week9_Q.js"></script>
+    </head>
+    <body>
+        <a href="index.html">Home</a>
+        <a href="survey.html">Survey Form</a>
+        <form name="userSurvey"></form>
+            <h2>User Survey</h2>
+            <hr>
+            <h3>User information:</h3>
+            <p>Please enter your information below:</p>
+            <br>
+            <label>Name (required)</label><input type="text" id="uname" name="userName"><br><br>
+            <label>Email (required)</label><input type="text" id="email" name="email"><br><br>
+            <label>Phone (required)</label><input type="text" id="phone" name="phone"><br><br>
+            <hr>
+            <P>Please choose your favourite type of books(check all that apply)</P>
+            <input name="bookChoice0" type="checkbox"><label>Science Fiction</label>
+            <input name="bookChoice1" type="checkbox"><label>Travel guide</label>
+            <input name="bookChoice2" type="checkbox"><label>Short Story Collection</label>
+            <input bane="bookChoice3" type="checkbox"><label>Other</label>
+            <br><br>
+            <textarea cols="80" rows="8"></textarea><br>
+            <button onclick="validName();validNo();validEmail()">Submit</button>
+            <button>Reset form</button>
+        </form>
+       </body>
+
+    
+
+</html>

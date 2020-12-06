@@ -1,28 +1,35 @@
 iframe{
-    width:80%;
+    width:100%;
     height:650px;
     border:none;
     background-color: rgb(186, 250, 186);
-    margin-left:5%;
-    margin-right:5%;
 }
 
-#header{
-    margin:auto;
+html, body {
+    height: 100%;
+    margin:0;
 }
+
 li{
     display:inline-block;
     font-size: large;
     height: 20px;
     width: fit-content;
     text-indent: 30px;
+    float: none;
+    position: relative;
+    left:20%;
+    right:20%;
 }
 
 #motto{
-    float:right;
-    margin-right: 20%;
+    text-align: center;
     color: rgb(77, 104, 22);
     font-size: 24px;    
+}
+
+#logo{
+    float:left;
 }
 
 button{
@@ -33,19 +40,26 @@ button{
     width:150px;
     height:30px;
     border-radius: 10px;
+    margin-top: 30%;
 }
 
 button:hover{
     background-color: rgb(149, 223, 128);
     cursor: pointer;
+    color: green;
 }
 
+#submit, #reset{
+    margin-top: 5%;
+}
 
 #wrapper{
     background-color: lightyellow;
     font-family:Arial Black;
     font-size:large;
     width:80%;
+    height:100%;
+    padding:5px;
     margin-left:5%;
     margin-right:5%;
 }
@@ -53,11 +67,13 @@ button:hover{
 #footer{
     background-color: lightyellow;
     text-align: center;
+    padding-bottom: none;
     width:80%;
+    margin-top:1%;
     margin-left:5%;
     margin-right:5%;
     color: rgb(77, 104, 22);
-    font-size: 18px;
+    font-size: 16px;
 }
 
 #contact_details{
@@ -72,6 +88,16 @@ form{
     height:650px;
     float:right;
     border-right: 5px;
+}
+
+#label1, #label2, #label3{
+    padding:0px;
+	display:block;
+}
+
+#name, #email, #phone{
+    height:20px;
+    width:60%;
 }
 
 h3{
