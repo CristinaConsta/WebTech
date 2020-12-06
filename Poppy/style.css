@@ -1,0 +1,83 @@
+iframe{
+    width:80%;
+    height:650px;
+    border:none;
+    background-color: rgb(186, 250, 186);
+    margin-left:5%;
+    margin-right:5%;
+}
+
+#header{
+    margin:auto;
+}
+li{
+    display:inline-block;
+    font-size: large;
+    height: 20px;
+    width: fit-content;
+    text-indent: 30px;
+}
+
+#motto{
+    float:right;
+    margin-right: 20%;
+    color: rgb(77, 104, 22);
+    font-size: 24px;    
+}
+
+button{
+    color:rgb(146, 180, 146);
+    border: none;
+    outline:none;
+    background-color: rgb(30, 99, 53);
+    width:150px;
+    height:30px;
+    border-radius: 10px;
+}
+
+button:hover{
+    background-color: rgb(149, 223, 128);
+    cursor: pointer;
+}
+
+
+#wrapper{
+    background-color: lightyellow;
+    font-family:Arial Black;
+    font-size:large;
+    width:80%;
+    margin-left:5%;
+    margin-right:5%;
+}
+
+#footer{
+    background-color: lightyellow;
+    text-align: center;
+    width:80%;
+    margin-left:5%;
+    margin-right:5%;
+    color: rgb(77, 104, 22);
+    font-size: 18px;
+}
+
+#contact_details{
+    width:48%;
+    height:650px;
+    float:left;
+    border-right: 1px solid;
+}
+
+form{
+    width:48%;
+    height:650px;
+    float:right;
+    border-right: 5px;
+}
+
+h3{
+    color: rgb(77, 104, 22);
+}
+h1{
+   text-align: center;
+   
+}

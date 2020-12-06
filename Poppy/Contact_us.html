@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact us</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="script.js"></script>
+    </head>
+        <div id="contact_details">
+            <h5>Telephone number available 24/7</h5>
+            <p>+44-7777.888.888</p>
+            <br><br><br>
+            <h5>Address</h5>
+            <p>100 High Street, London, UK</p>
+            <br><br><br>
+            <h5>Shelter visiting hours</h5>
+            <p>08:00-18:00 Monday to Sunday</p>
+        </div>
+        <form name="contact_form">
+            <h5>Please enter your contact details and the purpose of the request</h5>
+            <label>Name and surname </label><input type="text" id="uname" name="userName"><br><br>
+            <label>Email address</label><input type="text" id="email" name="email"><br><br>
+            <label>telephone number </label><input type="text" id="phone" name="phone"><br><br>
+            <p>Please choose your enquiry option)</p>
+            <input name="radiobutton" type="radio"><label>Adoption</label>
+            <input name="radiobutton" type="radio"><label>Volunteer</label>
+            <input name="radiobutton" type="radio"><label>Partner</label>
+            <input bane="radiobutton" type="radio"><label>Other</label>
+            <br><br>
+            <textarea cols="60" rows="15"></textarea><br>
+            <button onclick="validName();validNo();validEmail()">Submit</button>
+            <button>Reset form</button>
+        </form>
+    </body>
+</html>
