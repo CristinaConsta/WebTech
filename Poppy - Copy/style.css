@@ -131,8 +131,8 @@ legend{
 }
 
 #googleMap{
-    width:1%;
-    height:1%;
+    width:10%;
+    height:10%;
 }
 
 lu{
@@ -152,7 +152,6 @@ lu{
     margin: 5px auto 0 auto;
     padding: 2% 2% 2% 2%;
     border: 1px solid;
-    text-decoration: green;
 }
 
 #Register{
@@ -161,5 +160,4 @@ lu{
     margin: 5px auto 0 auto;
     padding: 2% 2% 2% 2%;
     border: 1px solid;
-    text-decoration: green;
 }
