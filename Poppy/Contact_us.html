@@ -22,7 +22,7 @@
         <form>
             <h3>Please enter your contact details and the purpose of the request</h3>
             <div id="contact_form">
-                <label id="label1">Name and surname </label><input type="text" id="name" name="userName"><br><br>
+                <label id="label1">Name and surname </label><input type="text" id="userName" name="userName"><br><br>
                 <label id="label2">Email address</label><input type="text" id="email" name="email"><br><br>
                 <label id="label3">Telephone number </label><input type="text" id="phone" name="phone"><br><br>
             </div>
@@ -33,7 +33,7 @@
                 <input bane="radiobutton" type="radio"><label>Other</label>
                 <br><br>
                 <textarea cols="60" rows="15"></textarea><br>
-                <button id="submit" onclick="validName();validNo();validEmail()">Submit</button>
+                <button id="submit" onclick="validName();validNo();validEmail();emailSent()">Submit</button>
                 <button id="reset">Reset form</button>
         </form>
     </body>
