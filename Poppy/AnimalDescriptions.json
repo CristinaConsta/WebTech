@@ -1,4 +1,11 @@
-[
-{"Baxter.jpeg":"Descriere 1"},
-{"Daisy.jpeg":"Descriere 2"}
-]
+data = {"animals":[
+    {"name": "Baxter", "description": "Age: 3 years old<br>Baxter is a dog saved off the streets of suburban London. He is very playful and gets along very well with other dogs. Baxter is very loving, and likes to be snugged and played with frequently. Perfect if you have kids!"},
+    {"name": "Daisy" , "description": "Age: 5 years old<br>Daisy was given to our shelter by a family that couldn't take care of another dog. She is a very calm and loving dog. Daisy will usually jump into your lap to demand petting. She is a lovely companion to those who need a calmer dog with whom to stay in the couch and read a book or watch a movie."},
+    {"name":"Max", "description": "Age: 9 months old<br>Max is a medium-sized dog. He was found by a citizen on a back alley, severly hurt. He has been brought to us and we have taken care of him, and he is prepared to meet a beautiful family to join. He is quite big and could help defend the garden, but he is also very gentle with the people he knows."},
+    {"name":"Milo", "description": "Age: 4 years old<br>Milo is a beautiful, stripped orange cat. He is particularly fluffy, and likes to play a lot with his toy mice. Milo often demands to be fed, and he also enjoys being taken outside for walks. He keeps himself very clean, and never bites or scratches."},
+    {"name":"Oscar", "description": "Age: 5 months old<br>Oscar is a beautiful little cat. He is very playful, and loves to run around the shelter when given the opportunity. He doesn't like water too much, but is otherwise curious of the environment and you will always see him smelling some new object or foodstuff."},
+    {"name":"Poppy", "description": "Age: 1 year old<br>Poppy is a young and beautiful dog. She enjoys sitting on any sort of carpet, couch or anything else that is particularly soft. She is mostly found either eating or sleeping. On the odd ocasion however, she likes to be bathed and taken out for a stroll."},
+    {"name":"Renata", "description": "Age: 2 years old<br>Renata was saved from an abusive owner. She is blind, and still has trauma. With love and care though, she can start forgetting about the abuse she has suffered and become the happy cat that she deserves to be. She is understandably scared of humans, but if you start petting her, she will become very accustomed to you and will love you immensly."},
+    {"name":"Shadow", "description": "Age: 6 months old<br>Shadow is a cat found all alone in a market alley. Although her origin is unknown, he had several injuries and was malnurished when he was found. Now, he is well-fed and healthy, but he still needs lots of attention and support to become a happy kitten. He would love it if you chose to take care of him and help him grow in a joyful family."}
+    ]}
+

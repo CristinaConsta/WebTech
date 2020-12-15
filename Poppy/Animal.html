@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html>
     <head>
-    <title>About us</title>
+    <title>Animals to adopt</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="script.js"></script>
+    <script type="text/javascript" src="./AnimalDescriptions.json"></script>
     </head>
-    <body onload="getSelectedAnimal(); getAnimalDescription()">
+    <body id="animalDetails" onload="getSelectedAnimal(); getAnimalDescription()">
         <img id="animalImage">
+        <p id="animalName"></p>
         <p id="animalDescription"></p>
+        <button onclick="adoptionRequest()" id="Adopt">Adopt</button>
     </body>
 </html>

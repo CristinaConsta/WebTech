@@ -2,7 +2,7 @@ iframe{
     width:100%;
     height:650px;
     border:none;
-    background-color:rgb(186, 250, 186);
+    background-color:rgb(194, 255, 194);
 }
 
 html, body {
@@ -121,13 +121,17 @@ p{
 }
 
 fieldset{
-    width:70%;
+    width:80%;
+    margin: 0 10% 0 10%;
+    background-color: lightyellow;
+    border-radius:3%;
 }
 
 legend{
     font-family:'Courier New', Courier, monospace;
     font-size:20px;
     font-weight: bold;
+    color: #A04B9C;
 }
 
 #googleMap{
@@ -174,8 +178,32 @@ lu{
     column-gap:           0px;  
   }
   
-  #animals img {
+#animals img {
     width: 100%;
     height: auto;
-  }
+}
 
+#animalDetails{
+    width: 23%;
+    height:650px;
+    border-radius: 6px;
+    margin: 5px auto 0 auto;
+    padding: 2% 2% 2% 2%;
+    text-align: justify;
+
+}
+#animalDescription{
+    padding: 1%;
+    background-color: lightyellow;
+    
+}
+
+#animalName{
+    font-weight: bold;
+    font-size:18px;
+    text-align: center;
+}
+
+#Adopt{
+    margin: 5% 5% 27% 27%;
+}

@@ -19,13 +19,11 @@
             <h3>Shelter visiting hours</h3>
             <p>08:00-18:00 Monday to Sunday</p>
         </div>
-        <form>
+        <form id="ContactForm">
             <h3>Please enter your contact details and the purpose of the request</h3>
-            <div id="contact_form">
-                <label id="label1">Name and surname </label><input type="text" id="userName" name="userName"><br><br>
-                <label id="label2">Email address</label><input type="text" id="email" name="email"><br><br>
-                <label id="label3">Telephone number </label><input type="text" id="phone" name="phone"><br><br>
-            </div>
+                <label id="label1">Name and surname </label><input type="text" name="userName"><br><br>
+                <label id="label2">Email address</label><input type="email" name="email"><br><br>
+                <label id="label3">Telephone number </label><input type="text" name="phone"><br><br>
                 <p>Please choose your enquiry option</p>
                 <input name="radiobutton" type="radio"><label>Adoption</label>
                 <input name="radiobutton" type="radio"><label>Volunteer</label>
@@ -33,7 +31,7 @@
                 <input bane="radiobutton" type="radio"><label>Other</label>
                 <br><br>
                 <textarea cols="60" rows="15"></textarea><br>
-                <button id="submit" onclick="validName();validNo();validEmail();emailSent()">Submit</button>
+                <button onclick="validateContactForm()" id="submit">Submit</button>
                 <button id="reset">Reset form</button>
         </form>
     </body>

@@ -4,13 +4,34 @@ function map() {
       zoom:6,
   };
   var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-  }
-
+}
 
 function user(){   
   username=document.getElementById("userName").value;
-  sessionStorage.setItem("login", username);
-  top.window.location.href="Index.html";
+  password=document.getElementById("passWord").value;
+  if(username!="" && password!="")
+  {
+    sessionStorage.setItem("login", username);
+    top.window.location.href="Index.html";
+  }
+  else
+    alert("Invalid sign in details"); 
+}
+
+function register()
+{
+  username=document.getElementById("userName").value;
+  password=document.getElementById("passWord").value;
+  email=document.getElementById("eMail").value;
+  if(username!="" && password!="" && email!="")
+  {
+    sessionStorage.setItem("login", username);
+    top.window.location.href="Index.html";
+    welcome();
+  }
+  else
+    alert("Invalid sign in details"); 
+  
 }
 
 function getUser(){
@@ -40,103 +61,76 @@ function selectedAnimal(elem){
 
 function getSelectedAnimal(){
   var animal=sessionStorage.getItem("image");
-if(!!animal)
-{
-    document.getElementById("animalImage").src=animal;
+  if(!!animal)
+  {
+      document.getElementById("animalImage").src=animal;
+  }
 }
-}
-
 
 function getAnimalDescription(){
   var fullpath=sessionStorage.getItem("image");
-  var name=fullpath.replace(/^.*[\\\/]/, '');
+  var myname=fullpath.toString().split('/').pop().replace(/\.\w+$/, '');
   if(!!fullpath)
   {
-      document.getElementById("animalDescription").innerHTML=name;
+    document.getElementById("animalName").innerHTML=myname;
+
+    var arr = JSON.parse(JSON.stringify(data));
+    let filtered=arr.animals.filter(item => item.name==myname);
+    document.getElementById("animalDescription").innerHTML=filtered[0].description;
   }
 }
 
+function resetForm(){
+  document.getElementById("userName").reset();
+  document.getElementById("email").reset();
+  document.getElementById("phone").reset()
+}
 
-
-function validName(){
-  var username=document.getElementById("userName").value;
-  if(username==""){
-      alert("Please insert an user name!");
-      document.getElementById("userName").focus();
+function adoptionRequest(){
+  if(!!sessionStorage.getItem("login")){
+    alert("Thank you for your interest. An email has been sent to you with details.")
+  }
+  else{
+    alert("Please register or sign in first.")
   }
 }
 
-function validNo(){
-  var ph=document.getElementById("phone").value;
-  var numbersOnly = "";
-  var chars = "";
-  var phoneNo = document.getElementById("phone").value;
-  if(ph==""){
-  //if(!document.userSurvey.phone.value){
-      alert("Please insert a phone number in the requested format");
-  //    document.userSurvey.phone.focus();
+function validateContactForm(){
+  var name = document.forms["ContactForm"]["userName"].value;
+  var email= document.forms["ContactForm"]["email"].value;
+  var phone= document.forms["ContactForm"]["phone"].value;
+  if (name == "") {
+    alert("Name must be filled out!");
+    return false;
+  }
+  else if
+    (email == "") {
+      alert("Email address must be filled out!");
       return false;
   }
+  else if
+    (phone == ""){
+      alert("Telephone number must be filled out!");
+      return false;
+  }
+  else if(!validRadios())
+  {
+    alert("Must check some option!");
+    return false;
+  }
   else
-  {
-  
-  for (i = 0; i < phoneNo.length; i++)
-  {
-  chars = phoneNo.substring(i,i+1);
+   alert("Thank you for your enquiry!");
+}
 
-  if (chars >= "0" && chars <= "9")
-  
-  {
-  numbersOnly = numbersOnly + chars;
+function validRadios(){
+  var radios = document.getElementsByName("radiobutton");
+  var formValid = false;
+  var i = 0;
+  while (!formValid && i < radios.length) {
+      if (radios[i].checked)
+        formValid = true;
+      i++;        
   }
-  }
-if (numbersOnly.length != 13)
-{
-  alert("Incorrect phone number format. You must enter 13 numbers!");
-  document.getElementById("phone").focus();
-  return false;
-}
-else
-{
-  var areacode = numbersOnly.substring(0,2);
-  var leading0 = numbersOnly.substring(2,3);
-  var exchange = numbersOnly.substring(3,5);
-  var ext1 = numbersOnly.substring(5,9);
-  var ext2 = numbersOnly.substring(9);
-  var newNumber =( "+" + areacode + " " +"(" + leading0+ ")" + exchange + " " + ext1 + "-" + ext2);
-  document.getElementById("phone").value = newNumber;
-  return true;
-      }
-  }
-}
 
-
-function validEmail(){
-  var email=document.getElementById("email").value;
-if (email==""){
-  alert("E-mail Address missing. Please enter a valid E-mail address to continue.");
-  document.getElementById("email").focus();
-  return false;
-}
-else
-{
-var emailAddress = document.getElementById("email").value;
-var atLoc = emailAddress.indexOf("@",1);
-var dotLoc = emailAddress.indexOf(".",atLoc+2);
-var len = emailAddress.length;
-if (atLoc > 0 && dotLoc > 0 && len > dotLoc+2)
-{
-return true;
-}
-else
-{
-alert("Invalid E-mail address! Please enter your e-mail address again.");
-document.getElementById("email").focus();
-return false;
-}
-}
-}
-
-function emailSent(){
-  alert("An email has been sent to your email address. Thank you for your message.")
+  return formValid;
 }
